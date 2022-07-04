@@ -8,20 +8,20 @@ const generateMarkdown = require('./utils/generateMarkdown')
 const questions = [
     {
         type: "input",
-        message: "Provide title of the project",
+        message: "Provide title of the project:",
         name: "title",
         validate: (value)=> {if (value){return true} else {return "Please enter title to continue"}}
     },
     {
         type: "input",
-        message: "Provide description of the project",
+        message: "Provide description of the project:",
         name: "description",
         validate: (value)=> {if (value){return true} else {return "Please enter description to continue"}}
 
     },
     {
         type: "input",
-        message: "Provide instructions on how to install the project",
+        message: "Provide instructions on how to install the project:",
         name: "installation",
         validate: (value)=> {if (value){return true} else {return "Please enter installation instructions to continue"}}
 
@@ -35,7 +35,7 @@ const questions = [
     },
     {
         type: "checkbox",
-        message: "Select a license for the project.",
+        message: "Select a license for the project:",
         name: "license",
         choices: ["MIT", "GPL", "Apache", "BSD"],
         validate: (value)=> {if (value){return true} else {return "Please enter licensing information to continue"}}
