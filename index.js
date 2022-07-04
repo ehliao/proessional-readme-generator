@@ -34,6 +34,13 @@ const questions = [
 
     },
     {
+        type: "input",
+        message: "How do you test the project?",
+        name: "test",
+        validate: (value)=> {if (value){return true} else {return "Please enter testing instructions to continue"}}
+
+    },
+    {
         type: "checkbox",
         message: "Select a license for the project:",
         name: "license",
@@ -46,13 +53,6 @@ const questions = [
         message: "Please provide either the number or names of people who contributed to this project:",
         name: "contribution",
         validate: (value)=> {if (value){return true} else {return "Please enter number of contribution to continue"}}
-
-    },
-    {
-        type: "input",
-        message: "How do you test the project?",
-        name: "test",
-        validate: (value)=> {if (value){return true} else {return "Please enter testing instructions to continue"}}
 
     },
     {

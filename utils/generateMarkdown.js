@@ -46,9 +46,9 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Test](#test)
   * [License](#license)
   * [Contribution](#contribution)
-  * [Test](#test)
   * [GitHub](#github)
   * [Email](#email)
   
@@ -72,6 +72,12 @@ function generateMarkdown(data) {
 
   <br/>
 
+  # Test
+  *This section provides instructions on how to test the project*
+  ## ${data.test}
+
+  <br/>
+
   # License
   *This section provides licensing information*
   ## ${renderLicenseBadge(data.license)}
@@ -82,12 +88,6 @@ function generateMarkdown(data) {
   # Contribution
   *This sections lists the number or names of the people who contributed to the project*
   ## ${data.contribution}
-
-  <br/>
-
-  # Test
-  *This section provides instructions on how to test the project*
-  ## ${data.test}
 
   <br/>
 
